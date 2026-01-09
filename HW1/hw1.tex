@@ -1,0 +1,62 @@
+%! Author = Kevin Lin
+%! Date = 1/16/2026
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{HW 1}
+\author{Kevin Lin}
+\date{1/16/2026}
+
+% Document
+\begin{document}
+\maketitle
+
+\section{}
+\begin{enumerate}[(i)]
+    \item Given $X_i, \ldots, X_n$ are i.i.d. Poisson($\lambda$), and the family
+    of estimators for $\lambda$ is $\hat{\lambda}_{\alpha, \beta} = \frac{\sum_{i=1}^n X_i + \alpha}{n + \beta}$,
+    where $\alpha, \beta \geq 0$, the expectation $E[\hat{\lambda}_{\alpha, \beta}]$ 
+    can be computed as follows:
+    \begin{align*}
+        E[\hat{\lambda}_{\alpha, \beta}] &= E\left[\frac{\sum_{i=1}^n X_i + \alpha}{n + \beta}\right] \\
+        &= \frac{1}{n + \beta} E\left[\sum_{i=1}^n X_i + \alpha\right] \\
+        &= \frac{1}{n + \beta} \left(E\left[\sum_{i=1}^n X_i\right] + E[\alpha]\right) \\
+        &= \frac{1}{n + \beta} \left(n\lambda + \alpha\right) \\
+        &= \frac{n\lambda + \alpha}{n + \beta}
+    \end{align*}
+    The variance $Var(\hat{\lambda}_{\alpha, \beta})$ is computed as:
+    \begin{align*}
+        Var(\hat{\lambda}_{\alpha, \beta}) &= Var\left(\frac{\sum_{i=1}^n X_i + \alpha}{n + \beta}\right) \\
+        &= \frac{1}{(n + \beta)^2} Var\left(\sum_{i=1}^n X_i\right) \\
+        &= \frac{1}{(n + \beta)^2} \left(n Var(X_i)\right) \\
+        &= \frac{1}{(n + \beta)^2} (n \lambda) \\
+        &= \frac{n \lambda}{(n + \beta)^2}
+    \end{align*}
+    \item The estimator $\hat{\lambda}_{\alpha, \beta}$ is biased if $E[\hat{\lambda}_{\alpha, \beta}] \neq \lambda$.
+    Setting $E[\hat{\lambda}_{\alpha, \beta}] = \lambda$, we have:
+    \begin{align*}
+        \frac{n\lambda + \alpha}{n + \beta} &= \lambda \\
+        n\lambda + \alpha &= \lambda(n + \beta) \\
+        n\lambda + \alpha &= n\lambda + \lambda\beta \\
+        \alpha &= \lambda\beta
+    \end{align*}
+    Thus, the estimator is biased when $\alpha \neq \lambda\beta$.
+    \item The MSE of the estimator can be calculated as follows:
+    \begin{align*}
+        MSE(\hat{\lambda}_{\alpha, \beta}) &= E[(\hat{\lambda}_{\alpha, \beta} - \lambda)^2] \\
+        &= Var(\hat{\lambda}_{\alpha, \beta}) + (E[\hat{\lambda}_{\alpha, \beta}] - \lambda)^2 \\
+        &= \frac{n \lambda}{(n + \beta)^2} + \left(\frac{n\lambda + \alpha}{n + \beta} - \lambda\right)^2 \\
+        &= \frac{n \lambda}{(n + \beta)^2} + \left(\frac{\alpha - \lambda\beta}{n + \beta}\right)^2 \\
+        &= \frac{n \lambda + (\alpha - \lambda\beta)^2}{(n + \beta)^2}
+    \end{align*}
+    \item You would prefer using $\hat{\lambda}_{\alpha, \beta}$ over $\hat{\lambda}$
+    when the MSE of $\hat{\lambda}_{\alpha, \beta}$ is less than that of $\hat{\lambda}$.
+    Otherwise, you would prefer $\hat{\lambda}$.
+\end{enumerate}
+\end{document}
