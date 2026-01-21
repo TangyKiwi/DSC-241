@@ -1,0 +1,75 @@
+%! Author = Kevin Lin
+%! Date = 1/23/2026
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+\title{HW 2}
+\author{Kevin Lin}
+\date{1/23/2026}
+
+% Document
+\begin{document}
+\maketitle
+
+Let $X$ and $Y$ be bivariate Gaussian with mean $(\mu_X, \mu_Y)$, common variance
+$\sigma^2$, and correlation coefficient $\rho > 0$. The bivariate mean is random
+and determined by $Z$, where
+\[
+(\mu_X, \mu_Y) = \begin{cases}
+(-\mu, \mu) & Z = -1, \\
+(\mu, -\mu) & Z = 1
+\end{cases}
+\]
+with equal probability for $Z = -1$ and $Z = 1$.
+
+\section{}
+\begin{enumerate}[(a)]
+    \item The conditional expectation $E[Y | X, Z]$ can be calculated as:
+    \[
+        E[Y | X, Z] = \mu_Y + \frac{Cov(X, Y)}{Var(X)} (X - \mu_X)
+    \]
+    Since $\rho = \frac{Cov(X, Y)}{\sqrt{Var(X)Var(Y)}}$, we have:
+    \begin{align*}
+        \rho &= \frac{Cov(X, Y)}{\sqrt{\sigma^2 \dot \sigma^2}} \\
+        Cov(X, Y) &= \rho \sigma^2
+    \end{align*}
+    Substituting this back into our equation:
+    \begin{align*}
+        E[Y | X, Z] &= \mu_Y + \frac{\rho \sigma^2}{\sigma^2} (X - \mu_X) \\
+        E[Y | X, Z] &= \mu_Y + \rho (X - \mu_X)
+    \end{align*}
+    $\therefore$
+    \[
+        E[Y | X, Z] = \begin{cases}
+        \mu - \rho (X + \mu) & Z = -1, \\
+        -\mu + \rho (X - \mu) & Z = 1
+        \end{cases}
+    \]
+    The CEF consequently is linear in $X$ for each fixed $Z$. \\
+    The conditional expectation $E[Y | Z]$ is:
+    \begin{align*}
+        E[Y | Z] &= \mu_Y + \frac{Cov(X, Y)}{Var(X)} (E[X | Z] - \mu_X) \\
+        E[Y | Z] &= \mu_Y + \rho(\mu_X - mu_X) \\
+        E[Y | Z] &= \mu_Y \\
+        E[Y | Z] &= \begin{cases}
+        \mu & Z = -1, \\
+        -\mu & Z = 1
+        \end{cases}
+    \end{align*}
+    The CEF consequently is constant for each fixed $Z$. \\
+    The conditional expectation $E[Y | X]$ is:
+    \begin{align*}
+        E[Y | X] &= E[E[Y | X, Z] | X] = \frac{1}{2} \left( \mu - \rho (X + \mu) \right) + \frac{1}{2} \left( -\mu + \rho (X - \mu) \right) \\
+        E[Y | X] &= \rho X - (1 - \rho) \mu
+    \end{align*}
+    The CEF consequently is linear in $X$.
+\end{enumerate}
+
+\end{document}
