@@ -9,6 +9,7 @@
 \usepackage{amssymb}
 \usepackage{enumerate}
 \usepackage{hyperref}
+\usepackage{pdfpages}
 
 \title{HW 2}
 \author{Kevin Lin}
@@ -146,4 +147,15 @@ with equal probability for $Z = -1$ and $Z = 1$.
     the slope becomes negative even though the data trend is positive. Thus we can
     conclude that Simpson's paradox arises when $\mu^2 > \rho \sigma^2$ and $\rho > 0$.
 \end{enumerate}
+
+\includepdf[pages=-]{hw2_code.pdf}
+
+\noindent \textbf{LLM Usage}: All work was done in VSCode with \href{https://code.visualstudio.com/docs/copilot/overview}{GitHub Copilot integration}. 
+The integration ``provides code suggestions, explanations, and automated 
+implementations based on natural language prompts and existing code context,'' 
+and also offers autonomous coding and an in-IDE chat interface that is able to 
+interact with the current codebase. Only the Copilot provided automatic inline 
+suggestions for both LaTex and Python in \verb+.tex+ and \verb+.ipynb+ Jupyter notebook 
+files respectively were taken into account / used.
+
 \end{document}
