@@ -66,10 +66,84 @@ with equal probability for $Z = -1$ and $Z = 1$.
     The CEF consequently is constant for each fixed $Z$. \\
     The conditional expectation $E[Y | X]$ is:
     \begin{align*}
-        E[Y | X] &= E[E[Y | X, Z] | X] = \frac{1}{2} \left( \mu - \rho (X + \mu) \right) + \frac{1}{2} \left( -\mu + \rho (X - \mu) \right) \\
-        E[Y | X] &= \rho X - (1 - \rho) \mu
+        E[Y | X] &= E[E[Y | X, Z] | X] = [-\mu + \rho(X - \mu)] \cdot P(Z = 1 | X) + \\ &[\mu - \rho(X + \mu)] \cdot P(Z = -1 | X) \\
+        P(Z = 1 | X) &= \frac{P(X | Z = 1) P(Z = 1)}{P(X | Z = 1) P(Z = 1) + P(X | Z = -1) P(Z = -1)} \\
+        P(Z = 1 | X) &= \frac{\exp\left(-\frac{(X - \mu)^2}{2\sigma^2}\right) \cdot \frac{1}{2}}{\exp\left(-\frac{(X - \mu)^2}{2\sigma^2}\right) \cdot \frac{1}{2} + \exp\left(-\frac{(X + \mu)^2}{2\sigma^2}\right) \cdot \frac{1}{2}} \\
+        P(Z = 1 | X) &= \frac{1}{1 + \exp\left(-\frac{2\mu}{\sigma^2} X\right)} \\
+        P(Z = -1 | X) &= 1 - P(Z = 1 | X) \therefore \\
+        E[Y | X] &= [-\mu + \rho(X - \mu)] \cdot \frac{1}{1 + \exp\left(-\frac{2\mu}{\sigma^2} X\right)} + \\ &[\mu - \rho(X + \mu)] \cdot \left(1 - \frac{1}{1 + \exp\left(-\frac{2\mu}{\sigma^2} X\right)}\right) \\
+        \text{Let } p &= \frac{1}{1 + \exp\left(-\frac{2\mu}{\sigma^2} X\right)} \therefore \\
+        E[Y | X] &= [-\mu + \rho(X - \mu)] \cdot p + [\mu - \rho(X + \mu)] \cdot (1 - p) \\
+        E[Y | x] &= -\mu p + \rho X p - \rho \mu p + \mu - \mu p - \rho X + \rho X p - \rho \mu + \rho \mu p \\
+        E[Y | X] &= \rho X + \mu (1 - \rho)(1 - 2p) \\
+        E[Y | X] &= \rho X + \mu (1 - \rho) \left(1 - 2 \cdot \frac{1}{1 + \exp\left(-\frac{2\mu}{\sigma^2} X\right)}\right) \\
     \end{align*}
-    The CEF consequently is linear in $X$.
+    The CEF consequently is not linear in $X$.
+    \item See attached Jupyter notebook.
 \end{enumerate}
 
+\section{}
+\begin{enumerate}[(a)]
+    \item The best linear approximations for the CEFs $E[Y | X, Z], E[Y |Z]$ are
+    their literal lines as they are already linear, and respectively thus are:
+    \begin{align*}
+        E^*[Y | X, Z] &= E[Y | X, Z] = \begin{cases}
+        \mu - \rho (X + \mu) = 1 - \frac{1}{2}(X + 1) & Z = -1, \\
+        -\mu + \rho (X - \mu) = -1 + \frac{1}{2}(X - 1) & Z = 1
+        \end{cases} \\
+        E^*[Y | Z] &= E[Y | Z] = \begin{cases}
+        \mu = 1 & Z = -1, \\
+        -\mu = -1 & Z = 1
+        \end{cases}
+    \end{align*}
+    The best linear approximation for the CEF $E[Y | X]$ can be found as:
+    \begin{gather*}
+        a + bX \\
+        b = \frac{Cov(X, E[Y | X])}{Var(X)} = \frac{E[Cov(X, Y | Z)] + Cov(E[X | Z], E[Y | Z])}{Var(X)} \\
+        = \frac{\rho \sigma^2 - \mu^2}{\sigma^2 + \mu^2} \\
+        a = E[E[Y | X]] - bE[X] = 0 - b \cdot 0 = 0 \\
+        \therefore \\
+        E^*[Y | X] = \frac{\rho \sigma^2 - \mu^2}{\sigma^2 + \mu^2} X
+    \end{gather*}
+    \item See attached Jupyter notebook.
+\end{enumerate}
+
+\section{}
+\begin{enumerate}[(a)]
+    \item The conditional residual variance $Var[Y - E[Y | X, Z] | X,Z]$ can be 
+    calculated as:
+    \begin{align*}
+        Var[Y - E[Y | X, Z] | X,Z] &= Var[Y | X, Z] \\
+        &= Var[Y] - \frac{Cov(X, Y)^2}{Var(X)} \\
+        &= \sigma^2 - \frac{(\rho \sigma^2)^2}{\sigma^2} \\
+        &= \sigma^2 (1 - \rho^2)
+    \end{align*}
+    The conditional residual variance $Var[Y - E[Y | Z] | Z]$ can be calculated as:
+    \begin{align*}
+        Var[Y - E[Y | Z] | Z] &= Var[Y | Z] \\
+        &= Var[Y] = \sigma^2
+    \end{align*}    
+    The conditional residual variance $Var[Y - E[Y | X] | X]$ can be calculated as:
+    \begin{align*}
+        Var[Y - E[Y | X] | X] &= E[Var[Y | X, Z] | X] + Var[E[Y | X, Z] - E[Y | X] | X] \\
+        &= E[Var[Y | X, Z] | X] + Var[E[Y | X, Z] | X] \\
+        &= \sigma^2 (1 - \rho^2) + p(1 - p)(E[Y | X, Z = 1] - E[Y | X, Z = -1])^2 \\
+        &= \sigma^2 (1 - \rho^2) + p(1 - p)(2\mu(1 + \rho))^2 \\
+        & \text{where } p \text{ is defined as in (1a)}
+    \end{align*}
+    \item See attached Jupyter notebook.
+\end{enumerate}
+
+\section{}
+\begin{enumerate}[(a)]
+    \item When ignoring $Z$ and looking at each subgroup, the best linear predictor 
+    coincides with each CEF, showing a seemingly perfect linear relationship between 
+    $X$ and $Y$ for each fixed $Z$. However, when you actually condition on $Z$,
+    we realize that the opposite is true: there is no linear relationship between
+    $X$ and $Y$ and we see a negative slope which extremely poorly fits the data.
+    $Z$ is the confounding variable that causes this paradoxical situation.
+    \item As we can already see when calculating the best linear predictor for $E[Y | X]$,
+    the slope becomes negative even though the data trend is positive. Thus we can
+    conclude that Simpson's paradox arises when $\mu^2 > \rho \sigma^2$ and $\rho > 0$.
+\end{enumerate}
 \end{document}
