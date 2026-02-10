@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.25)  10 FEB 2026 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.25)  10 FEB 2026 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/TangyKiwi/Desktop/UCSD/DSC-241/HW4/hw4.tex
-(c:/Users/TangyKiwi/Desktop/UCSD/DSC-241/HW4/hw4.tex
+**c:/Users/TangyKiwi/Desktop/UCSD/DSC-241/HW5/hw5.tex
+(c:/Users/TangyKiwi/Desktop/UCSD/DSC-241/HW5/hw5.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\TangyKiwi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -286,8 +286,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [margin].
 
-(hw4.aux)
-\openout1 = `hw4.aux'.
+(hw5.aux)
+\openout1 = `hw5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -308,9 +308,9 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 Package hyperref Info: Link coloring OFF on input line 19.
- (hw4.out) (hw4.out)
+ (hw5.out) (hw5.out)
 \@outlinefile=\write3
-\openout3 = `hw4.out'.
+\openout3 = `hw5.out'.
 
  (C:\Users\TangyKiwi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -346,191 +346,33 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (C:\Users\TangyKiwi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (15.22836pt too wide) in paragraph at lines 48--54
-\OT1/cmr/m/n/10.95 unit-norm lin-ear com-bi-na-tions of the fit-ted co-ef-fi-cients $[][] [][\OML/cmm/m/it/10.95 a[][]\OT1/cmr/m/n/10.95 ]$
+) [1
+
+{C:/Users/TangyKiwi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (0.71169pt too wide) in paragraph at lines 107--109
+\OT1/cmr/m/n/10.95 We can split the above sum-ma-tion into the con-trol and treat-ment groups: 
  []
 
-[1
-
-{C:/Users/TangyKiwi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<hw4_code.pdf, id=29, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf>
-Package pdftex.def Info: hw4_code.pdf  used on input line 104.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<hw4_code.pdf, id=31, page=1, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 1>
-Package pdftex.def Info: hw4_code.pdf , page1 used on input line 104.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 1>
-Package pdftex.def Info: hw4_code.pdf , page1 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [2]
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 1>
-Package pdftex.def Info: hw4_code.pdf , page1 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 1>
-Package pdftex.def Info: hw4_code.pdf , page1 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 1>
-Package pdftex.def Info: hw4_code.pdf , page1 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [3
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=105, page=2, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 2>
-Package pdftex.def Info: hw4_code.pdf , page2 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 2>
-Package pdftex.def Info: hw4_code.pdf , page2 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 2>
-Package pdftex.def Info: hw4_code.pdf , page2 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [4
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=112, page=3, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 3>
-Package pdftex.def Info: hw4_code.pdf , page3 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 3>
-Package pdftex.def Info: hw4_code.pdf , page3 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 3>
-Package pdftex.def Info: hw4_code.pdf , page3 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [5
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=124, page=4, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 4>
-Package pdftex.def Info: hw4_code.pdf , page4 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 4>
-Package pdftex.def Info: hw4_code.pdf , page4 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 4>
-Package pdftex.def Info: hw4_code.pdf , page4 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [6
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=193, page=5, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 5>
-Package pdftex.def Info: hw4_code.pdf , page5 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 5>
-Package pdftex.def Info: hw4_code.pdf , page5 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 5>
-Package pdftex.def Info: hw4_code.pdf , page5 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [7
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=201, page=6, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 6>
-Package pdftex.def Info: hw4_code.pdf , page6 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 6>
-Package pdftex.def Info: hw4_code.pdf , page6 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 6>
-Package pdftex.def Info: hw4_code.pdf , page6 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [8
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=208, page=7, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 7>
-Package pdftex.def Info: hw4_code.pdf , page7 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 7>
-Package pdftex.def Info: hw4_code.pdf , page7 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 7>
-Package pdftex.def Info: hw4_code.pdf , page7 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [9
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=214, page=8, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 8>
-Package pdftex.def Info: hw4_code.pdf , page8 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 8>
-Package pdftex.def Info: hw4_code.pdf , page8 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 8>
-Package pdftex.def Info: hw4_code.pdf , page8 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [10
-
- <./hw4_code.pdf>]
-<hw4_code.pdf, id=230, page=9, 614.295pt x 794.97pt>
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 9>
-Package pdftex.def Info: hw4_code.pdf , page9 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 9>
-Package pdftex.def Info: hw4_code.pdf , page9 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: hw4_code.pdf Graphic file (type pdf)
-<use hw4_code.pdf, page 9>
-Package pdftex.def Info: hw4_code.pdf , page9 used on input line 104.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [11
-
- <./hw4_code.pdf>] [12] (hw4.aux)
+[3] [4] [5] (hw5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `hw4.out' has not changed.
-(rerunfilecheck)             Checksum: C4A78932A39E3CA429CA63F6CA31738E;70.
+Package rerunfilecheck Info: File `hw5.out' has not changed.
+(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
  ) 
 Here is how much of TeX's memory you used:
- 11017 strings out of 474486
- 171892 string characters out of 5741867
- 1937542 words of memory out of 5000000
- 33138 multiletter control sequences out of 15000+600000
- 565642 words of font info for 65 fonts, out of 8000000 for 9000
+ 10979 strings out of 474486
+ 170966 string characters out of 5741867
+ 1943542 words of memory out of 5000000
+ 33105 multiletter control sequences out of 15000+600000
+ 566095 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,294b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw4.pdf (12 pages, 743245 bytes).
+ 75i,11n,79p,294b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/TangyKiwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on hw5.pdf (5 pages, 142820 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 72 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
